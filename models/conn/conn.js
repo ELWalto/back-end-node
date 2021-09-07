@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 // url de conexão mongodb://sevidor:porta/nomeBanco
 
-function Conn(url, _user, _pass, banco) {
+function Conn(url, user, pass, banco) {
   mongoose
     .connect(`${url}/${banco}`, {
       // conecta no bd com as configurações setadas
